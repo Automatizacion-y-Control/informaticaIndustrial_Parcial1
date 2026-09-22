@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# --- build_pdf.py: intermediados y control visual, no son el entregable ---
+c_prototipado/scripts/_build/
+c_prototipado/scripts/qa/
+
+# --- Fuentes reales opcionales (Google Fonts / JetBrains, no se versionan) ---
+c_prototipado/scripts/fonts/*.ttf
+c_prototipado/scripts/fonts/*.otf
+c_prototipado/scripts/fonts/*.woff
+c_prototipado/scripts/fonts/*.woff2
+
+# --- Playwright ---
+c_prototipado/scripts/.playwright/
+
+# --- Archivos temporales de Office (Word/PowerPoint/Excel abiertos) ---
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# --- Sistema operativo ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Editor ---
+.vscode/
+*.code-workspace
