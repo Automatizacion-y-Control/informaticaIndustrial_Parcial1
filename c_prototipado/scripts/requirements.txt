@@ -1,0 +1,17 @@
+# build_pdf.py — dependencias
+markdown>=3.7
+beautifulsoup4>=4.12
+pyyaml>=6.0
+playwright>=1.45
+pypdf>=4.0
+pygments>=2.17
+
+# Solo necesario para la opción --proof (control visual, exporta PNG de páginas)
+pdf2image>=1.17
+# --proof además requiere poppler instalado en el sistema (pdftoppm):
+#   Windows: descargar poppler y agregar su carpeta bin/ al PATH
+#   macOS:   brew install poppler
+#   Linux:   apt install poppler-utils
+
+# Primer uso en una máquina nueva, después de "pip install -r requirements.txt":
+#   playwright install chromium
